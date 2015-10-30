@@ -1,4 +1,4 @@
-package com.open.gles;
+package com.open.gles.util;
 import java.io.*;
 import android.content.*;
 import android.content.res.*;
@@ -9,7 +9,7 @@ public class TextResourceReader
 		StringBuilder body = new StringBuilder();
 		
 		try{
-			InputStream inputStream = context.getResources().openRawResource(resourceId);
+		InputStream inputStream = context.getResources().openRawResource(resourceId);
 		
 			InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
 			BufferedReader bufferedReader = new BufferedReader(inputStreamReader);

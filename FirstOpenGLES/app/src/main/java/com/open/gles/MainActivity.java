@@ -7,6 +7,7 @@ import android.widget.*;
 import android.opengl.*;
 import android.content.pm.*;
 
+
 public class MainActivity extends Activity
 {
 	private GLSurfaceView glsurfaceView ;
@@ -32,7 +33,8 @@ public class MainActivity extends Activity
 			||Build.MODEL.contains("Android SDK build for x86")));
 		if(suportsEs2){
 			glsurfaceView.setEGLContextClientVersion(2);
-			glsurfaceView.setRenderer(new FirstOpenGLESRenderer());
+			glsurfaceView.setRenderer(new 
+			AirHockeyRenderer(this));
 			rendererSet = true;
 		}else{
 			Toast.makeText(this,"This device does not supports openGLES v 2.0", Toast.LENGTH_LONG).show();
