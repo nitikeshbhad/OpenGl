@@ -9,8 +9,8 @@ public class TextResourceReader
 		StringBuilder body = new StringBuilder();
 		
 		try{
-		InputStream inputStream = context.getResources().openRawResource(resourceId);
-		
+
+			InputStream inputStream = context.getResources().openRawResource(resourceId);
 			InputStreamReader inputStreamReader = new InputStreamReader(inputStream);
 			BufferedReader bufferedReader = new BufferedReader(inputStreamReader);
 		
@@ -20,7 +20,7 @@ public class TextResourceReader
 			while ((nextLine = bufferedReader.readLine()) != null)
 			{
 				body.append(nextLine);
-				body.append("\n");
+				body.append('\n');
 			}
 		}
 		catch (IOException e)

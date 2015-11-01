@@ -22,8 +22,8 @@ public class MainActivity extends Activity
         super.onCreate(savedInstanceState);
 		
 		glsurfaceView= new GLSurfaceView(this);
-        final ActivityManager activityManager = (ActivityManager)getSystemService(Service.ACTIVITY_SERVICE);
-		final ConfigurationInfo info = activityManager.getDeviceConfigurationInfo();
+        ActivityManager activityManager = (ActivityManager)getSystemService(Service.ACTIVITY_SERVICE);
+		ConfigurationInfo info = activityManager.getDeviceConfigurationInfo();
 		final boolean suportsEs2 = info.reqGlEsVersion >= 0x20000 
 		    ||(Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1
 			&& (Build.FINGERPRINT.startsWith("generic")
