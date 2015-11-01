@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\Users\\Nitikesh\\AndroidStudioProjects\\OpenGLES\\FirstOpenGLES\\app\\build\\intermediates\\res\\merged\\debug\\raw\\simple_fragment_shader.glsl",
+        "source": "C:\\Users\\Nitikesh\\AndroidStudioProjects\\OpenGLES\\FirstOpenGLES\\app\\src\\main\\res\\raw\\simple_fragment_shader.glsl"
+    },
+    {
+        "merged": "C:\\Users\\Nitikesh\\AndroidStudioProjects\\OpenGLES\\FirstOpenGLES\\app\\build\\intermediates\\res\\merged\\debug\\raw\\simple_vertex_shader.glsl",
+        "source": "C:\\Users\\Nitikesh\\AndroidStudioProjects\\OpenGLES\\FirstOpenGLES\\app\\src\\main\\res\\raw\\simple_vertex_shader.glsl"
+    }
+]
