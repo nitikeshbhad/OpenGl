@@ -85,6 +85,15 @@ public class AirHockeyRenderer implements GLSurfaceView.Renderer
 		};
 		*/
 
+		float[] triangleFan = {
+				   0f,		0f,
+				-0.5f,	 -0.5f,
+				 0.5f,	 -0.5f,
+				 0.5f,	  0.5f,
+				-0.5f,	  0.5f,
+				-0.5f,	 -0.5f
+		};
+
 		vertexData = ByteBuffer.allocateDirect(tableVerticesWithTriangle.length * BYTES_PER_FLOAT)
 				.order(ByteOrder.nativeOrder())
 				.asFloatBuffer();
